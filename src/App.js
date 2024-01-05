@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Helo from "./components/event";
+import FirstComponent from "./components/first-component";
+import HobiMount from "./components/lifecyle/mounting";
+import Unmounting from "./components/lifecyle/unmounting";
+import Updating from "./components/lifecyle/updating";
+import FirstState from "./components/state";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <FirstComponent/>
+    <FirstState/>
+    <HobiMount nama="melukis"/>
+    <Updating/>
+    <Unmounting/>
+    <Helo/>
+    </>
   );
 }
 
