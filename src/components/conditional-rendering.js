@@ -9,7 +9,6 @@ class Anak extends React.Component{
 
         return (
             <h3>{this.props.nama} {keterangan}, karena {kata} berumur {this.props.umur}.
-
             {this.props.umur >= 17 &&
             <span>Sudah Boleh Menggunakan Sepeda Motor</span>
             }
